@@ -1,0 +1,9 @@
+- name: Setup Homebrew packages
+  import_tasks: brew_setup.yml
+
+- name: Setup additional apps
+  import_tasks: python_packages_setup.yml
+
+- name: Setup Apache Spark
+  import_tasks: env_var_setup.yml
+

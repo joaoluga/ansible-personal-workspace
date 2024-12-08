@@ -1,0 +1,6 @@
+- name: Workspace Setup Playbook
+  hosts: local
+  tasks:
+    - import_tasks: roles/mac_setup/tasks/main.yml
+  vars_files:
+    - roles/mac_setup/vars/main.yml

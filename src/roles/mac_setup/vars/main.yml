@@ -1,0 +1,23 @@
+brew_packages:
+  - git
+  - wget
+  - htop
+  - apache-spark
+  - openjdk@11
+  - pyenv
+  - tfenv
+
+cask_packages:
+  - docker
+  - aws-vault
+
+python_packages:
+  - pyspark
+  - ipython
+  - awscli
+
+environment_variables:
+  - 'export JAVA_HOME=/usr/local/Cellar/openjdk@11/11.0.24/libexec/openjdk.jdk/Contents/Home'
+  - 'export SPARK_HOME=/usr/local/opt/apache-spark/libexec'
+  - 'export PATH=$SPARK_HOME/bin:$PATH'
+  - 'export PYSPARK_DRIVER_PYTHON=ipython'

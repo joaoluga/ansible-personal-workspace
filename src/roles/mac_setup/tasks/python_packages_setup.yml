@@ -1,0 +1,5 @@
+- name: Install python packages
+  pip:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ python_packages }}"
